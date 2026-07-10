@@ -1,0 +1,3 @@
+mode,target,catalog,table,status,rows,detail
+online,timeout,,,timeout,0,online query timeout
+fallback,embedded sample,,,used,3545,online rows below threshold 150

@@ -1,31 +1,31 @@
 [
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0035_THREE_INDIVIDUAL_LINES_PLUS_AVERAGE.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0035_THREE_INDIVIDUAL_REDSHIFT_LINES/PNG/JWST_0035_THREE_INDIVIDUAL_LINES_PLUS_AVERAGE.png"
   },
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0035_TRIPLET_PEAKS_1_2_3.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0035_THREE_INDIVIDUAL_REDSHIFT_LINES/PNG/JWST_0035_TRIPLET_PEAKS_1_2_3.png"
   },
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0035_THREE_SLOPES_TABLE.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0035_THREE_INDIVIDUAL_REDSHIFT_LINES/PNG/JWST_0035_THREE_SLOPES_TABLE.png"
   },
   {
     "type": "csv",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0035_THREE_INDIVIDUAL_LINE_SLOPES.csv",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0035_THREE_INDIVIDUAL_REDSHIFT_LINES/CSV/JWST_0035_THREE_INDIVIDUAL_LINE_SLOPES.csv"
   },
   {
     "type": "csv",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0035_SLOPE_SUMMARY.csv",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0035_THREE_INDIVIDUAL_REDSHIFT_LINES/CSV/JWST_0035_SLOPE_SUMMARY.csv"
   }

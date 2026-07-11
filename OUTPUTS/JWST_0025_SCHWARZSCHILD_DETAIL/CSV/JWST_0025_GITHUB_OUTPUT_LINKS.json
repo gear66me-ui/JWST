@@ -1,0 +1,26 @@
+[
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0025_SCHWARZSCHILD_DETAIL_ZERO_AXIS.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0025_SCHWARZSCHILD_DETAIL/PNG/JWST_0025_SCHWARZSCHILD_DETAIL_ZERO_AXIS.png"
+  },
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0025_SCHWARZSCHILD_KEY_VALUES_TABLE.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0025_SCHWARZSCHILD_DETAIL/PNG/JWST_0025_SCHWARZSCHILD_KEY_VALUES_TABLE.png"
+  },
+  {
+    "type": "csv",
+    "status": "created",
+    "file": "JWST_0025_SCHWARZSCHILD_DETAIL_CURVES.csv",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0025_SCHWARZSCHILD_DETAIL/CSV/JWST_0025_SCHWARZSCHILD_DETAIL_CURVES.csv"
+  },
+  {
+    "type": "csv",
+    "status": "created",
+    "file": "JWST_0025_SCHWARZSCHILD_KEY_VALUES.csv",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0025_SCHWARZSCHILD_DETAIL/CSV/JWST_0025_SCHWARZSCHILD_KEY_VALUES.csv"
+  }
+]

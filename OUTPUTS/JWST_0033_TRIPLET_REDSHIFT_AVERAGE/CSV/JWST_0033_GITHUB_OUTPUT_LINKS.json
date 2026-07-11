@@ -1,31 +1,31 @@
 [
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0033_THREE_LINE_REDSHIFT_DERIVATION.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0033_TRIPLET_REDSHIFT_AVERAGE/PNG/JWST_0033_THREE_LINE_REDSHIFT_DERIVATION.png"
   },
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0033_THREE_LINE_REDSHIFT_TABLE.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0033_TRIPLET_REDSHIFT_AVERAGE/PNG/JWST_0033_THREE_LINE_REDSHIFT_TABLE.png"
   },
   {
     "type": "csv",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0033_LINE_BY_LINE_REDSHIFT.csv",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0033_TRIPLET_REDSHIFT_AVERAGE/CSV/JWST_0033_LINE_BY_LINE_REDSHIFT.csv"
   },
   {
     "type": "csv",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0033_REDSHIFT_AVERAGE_SUMMARY.csv",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0033_TRIPLET_REDSHIFT_AVERAGE/CSV/JWST_0033_REDSHIFT_AVERAGE_SUMMARY.csv"
   },
   {
     "type": "csv",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0033_REDSHIFT_SCAN_SCORE.csv",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0033_TRIPLET_REDSHIFT_AVERAGE/CSV/JWST_0033_REDSHIFT_SCAN_SCORE.csv"
   }

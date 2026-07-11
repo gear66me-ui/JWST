@@ -1,0 +1,38 @@
+[
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0030_TOP_GITHUB_REPOS.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/PNG/JWST_0030_TOP_GITHUB_REPOS.png"
+  },
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0030_CATEGORY_COUNTS.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/PNG/JWST_0030_CATEGORY_COUNTS.png"
+  },
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0030_REPO_TABLE.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/PNG/JWST_0030_REPO_TABLE.png"
+  },
+  {
+    "type": "csv",
+    "status": "created",
+    "file": "JWST_0030_GITHUB_REPO_HARVEST.csv",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/CSV/JWST_0030_GITHUB_REPO_HARVEST.csv"
+  },
+  {
+    "type": "csv",
+    "status": "created",
+    "file": "JWST_0030_GITHUB_CODE_HITS.csv",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/CSV/JWST_0030_GITHUB_CODE_HITS.csv"
+  },
+  {
+    "type": "csv",
+    "status": "created",
+    "file": "JWST_0030_GITHUB_SEARCH_ERRORS.csv",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/CSV/JWST_0030_GITHUB_SEARCH_ERRORS.csv"
+  }
+]

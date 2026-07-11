@@ -1,0 +1,38 @@
+[
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0032_HALPHA_NII_TRIPLET_LABEL_LANE.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0032_NIRSPEC_HA_NII_LABEL_FIX/PNG/JWST_0032_HALPHA_NII_TRIPLET_LABEL_LANE.png"
+  },
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0032_REST_VS_OBSERVED_REDSHIFT_LINE.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0032_NIRSPEC_HA_NII_LABEL_FIX/PNG/JWST_0032_REST_VS_OBSERVED_REDSHIFT_LINE.png"
+  },
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0032_TRIPLET_REDSHIFT_TABLE.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0032_NIRSPEC_HA_NII_LABEL_FIX/PNG/JWST_0032_TRIPLET_REDSHIFT_TABLE.png"
+  },
+  {
+    "type": "csv",
+    "status": "created",
+    "file": "JWST_0032_HALPHA_NII_TRIPLET_REDSHIFT.csv",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0032_NIRSPEC_HA_NII_LABEL_FIX/CSV/JWST_0032_HALPHA_NII_TRIPLET_REDSHIFT.csv"
+  },
+  {
+    "type": "csv",
+    "status": "created",
+    "file": "JWST_0032_ZOOM_SPECTRUM_DATA.csv",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0032_NIRSPEC_HA_NII_LABEL_FIX/CSV/JWST_0032_ZOOM_SPECTRUM_DATA.csv"
+  },
+  {
+    "type": "csv",
+    "status": "created",
+    "file": "JWST_0032_GAUSSIAN_FIT_SUMMARY.csv",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0032_NIRSPEC_HA_NII_LABEL_FIX/CSV/JWST_0032_GAUSSIAN_FIT_SUMMARY.csv"
+  }
+]

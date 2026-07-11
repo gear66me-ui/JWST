@@ -1,0 +1,32 @@
+[
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0034_TRIPLET_ALL_1_2_3_LABELS.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0034_REST_OBSERVED_LINE_EXPLAINED/PNG/JWST_0034_TRIPLET_ALL_1_2_3_LABELS.png"
+  },
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0034_REST_VS_OBSERVED_ORANGE_GREEN_EXPLAINED.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0034_REST_OBSERVED_LINE_EXPLAINED/PNG/JWST_0034_REST_VS_OBSERVED_ORANGE_GREEN_EXPLAINED.png"
+  },
+  {
+    "type": "png",
+    "status": "created",
+    "file": "JWST_0034_REST_OBSERVED_DATA_TABLE.png",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0034_REST_OBSERVED_LINE_EXPLAINED/PNG/JWST_0034_REST_OBSERVED_DATA_TABLE.png"
+  },
+  {
+    "type": "csv",
+    "status": "created",
+    "file": "JWST_0034_TRIPLET_REST_OBSERVED_DATA.csv",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0034_REST_OBSERVED_LINE_EXPLAINED/CSV/JWST_0034_TRIPLET_REST_OBSERVED_DATA.csv"
+  },
+  {
+    "type": "csv",
+    "status": "created",
+    "file": "JWST_0034_ORANGE_GREEN_LINE_SUMMARY.csv",
+    "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0034_REST_OBSERVED_LINE_EXPLAINED/CSV/JWST_0034_ORANGE_GREEN_LINE_SUMMARY.csv"
+  }
+]

@@ -1,0 +1,7 @@
+type,status,file,raw_url
+png,created,JWST_0030_TOP_GITHUB_REPOS.png,https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/PNG/JWST_0030_TOP_GITHUB_REPOS.png
+png,created,JWST_0030_CATEGORY_COUNTS.png,https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/PNG/JWST_0030_CATEGORY_COUNTS.png
+png,created,JWST_0030_REPO_TABLE.png,https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/PNG/JWST_0030_REPO_TABLE.png
+csv,created,JWST_0030_GITHUB_REPO_HARVEST.csv,https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/CSV/JWST_0030_GITHUB_REPO_HARVEST.csv
+csv,created,JWST_0030_GITHUB_CODE_HITS.csv,https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/CSV/JWST_0030_GITHUB_CODE_HITS.csv
+csv,created,JWST_0030_GITHUB_SEARCH_ERRORS.csv,https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0030_GITHUB_JWST_REPO_HARVEST/CSV/JWST_0030_GITHUB_SEARCH_ERRORS.csv

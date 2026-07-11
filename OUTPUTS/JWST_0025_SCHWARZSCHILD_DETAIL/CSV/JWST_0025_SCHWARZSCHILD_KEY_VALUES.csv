@@ -1,0 +1,9 @@
+r/rs,region,clock rate,metric,tidal scale
+0.00,center,undefined,undefined,undefined
+0.50,inside horizon,no static hover,no static hover,no static hover
+1.00,horizon,0.000000,0.000000,1.000000
+1.25,outside,0.447214,0.200000,0.512000
+2.00,outside,0.707107,0.500000,0.125000
+3.00,outside,0.816497,0.666667,0.037037
+10.00,outside,0.948683,0.900000,0.001000
+15.00,outside,0.966092,0.933333,0.000296

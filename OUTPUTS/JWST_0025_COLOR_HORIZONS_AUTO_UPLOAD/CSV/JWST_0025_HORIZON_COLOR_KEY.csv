@@ -1,0 +1,4 @@
+boundary,radius_Gly,color,line_style,meaning
+Hubble radius,14.507302991551835,#22d3ee,short dash,recession speed equals c today; not a visibility wall
+Cosmic event horizon,16.67862002484012,#f59e0b,long dash,light emitted today beyond this distance never reaches us
+Particle horizon / observable radius,46.13426328368293,#e879f9,dash dot,present-day comoving radius of all light/signals that could have reached us

@@ -1,31 +1,31 @@
 [
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0027_HAWKING_TEMPERATURE_VS_RADIUS.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0027_HAWKING_TEMPERATURE_SGRA/PNG/JWST_0027_HAWKING_TEMPERATURE_VS_RADIUS.png"
   },
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0027_SGRA_HAWKING_TEMPERATURE_ZOOM.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0027_HAWKING_TEMPERATURE_SGRA/PNG/JWST_0027_SGRA_HAWKING_TEMPERATURE_ZOOM.png"
   },
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0027_HAWKING_TEMPERATURE_TABLE.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0027_HAWKING_TEMPERATURE_SGRA/PNG/JWST_0027_HAWKING_TEMPERATURE_TABLE.png"
   },
   {
     "type": "csv",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0027_HAWKING_TEMPERATURE_CURVE.csv",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0027_HAWKING_TEMPERATURE_SGRA/CSV/JWST_0027_HAWKING_TEMPERATURE_CURVE.csv"
   },
   {
     "type": "csv",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0027_ANCHOR_VALUES.csv",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0027_HAWKING_TEMPERATURE_SGRA/CSV/JWST_0027_ANCHOR_VALUES.csv"
   }

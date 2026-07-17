@@ -1,0 +1,27 @@
+# JWST_0178
+import requests
+
+SOURCE_URL='https://raw.githubusercontent.com/gear66me-ui/JWST/main/JWST_0176_JADES_GS_Z11_0_FULL_SPECTRUM_ALMA_VELOCITY_CORRECTED_WIDGET.py'
+source=requests.get(SOURCE_URL,timeout=120).text
+source=source.replace("VERSION='JWST_0176'","VERSION='JWST_0178'")
+source=source.replace('JWST_0176_','JWST_0178_')
+source=source.replace("model_emp=ns['best']; z_emp=float(ns['zbest'])","model_emp=None; z_emp=np.nan")
+source=source.replace("LYA=float(ns['LYA']); ZP=float(ns['ZP']); PNG=ns['PNG']; CSV=ns['CSV']","LYA=float(ns['LYA']); PNG=ns['PNG']; CSV=ns['CSV']")
+source=source.replace("resid_sys=(y-model_sys)/s; resid_emp=(y-model_emp)/s\nlya_emp=LYA*(1+z_emp); lya_paper=LYA*(1+ZP)","resid_sys=(y-model_sys)/s")
+source=source.replace("    ['Empirical continuum break',z_emp,lya_emp,np.nan,np.nan,np.nan],\n    ['Published SMDS fit',ZP,lya_paper,np.nan,np.nan,np.nan],\n","")
+source=source.replace("pd.DataFrame({'wavelength_um':x,'flux':y,'sigma':s,'empirical_model':model_emp,'systemic_surrogate':model_sys,'empirical_residual_sigma':resid_emp,'systemic_residual_sigma':resid_sys})","pd.DataFrame({'wavelength_um':x,'flux':y,'sigma':s,'systemic_surrogate':model_sys,'systemic_residual_sigma':resid_sys})")
+source=source.replace("        a1.plot(x[m],model_emp[m],color='#e68645',lw=1.9,label=f'Empirical continuum-break model, z={z_emp:.5f}')\n","")
+source=source.replace("        a1.axvline(lya_emp,color='#e68645',ls=':',lw=1.2,label=f'Empirical break anchor = {lya_emp:.6f} µm')\n","")
+source=source.replace("        a1.axvline(lya_paper,color='#ff6b6b',ls='--',lw=1.2,label=f'Paper SMDS anchor = {lya_paper:.6f} µm')\n","")
+source=source.replace("        for lam,lab,dy in [(LYA_SYS,'Lyα systemic reference',.90),(lya_emp,'Empirical break',.78),(lya_paper,'SMDS-model break',.66)]:","        for lam,lab,dy in [(LYA_SYS,'Official systemic Lyα reference',.90)]:")
+source=source.replace("        a2.step(x[m],resid_emp[m],where='mid',color='#e68645',lw=.9,label='Empirical residual / σ')\n","")
+source=source.replace("        labels=['Official systemic','Empirical break','Paper SMDS']; vals=[ZSYS,z_emp,ZP]\n        a3.scatter(vals,[2,1,0],s=90,color=['#8fd3ff','#e68645','#ff6b6b'])\n        for yy,v,lab,col,off in zip([2,1,0],vals,labels,['#8fd3ff','#e68645','#ff6b6b'],[(18,14),(18,0),(18,-14)]):\n            a3.annotate(f'{lab}: z={v:.5f}',xy=(v,yy),xytext=off,textcoords='offset points',va='center',fontsize=10,color=col,arrowprops=dict(arrowstyle='-',lw=.8,color=col))\n        a3.set_yticks([]); a3.set_xlim(min(vals)-.04,max(vals)+.08); a3.set_xlabel('Redshift z')","        labels=['Official full-precision systemic','Rounded-centroid derivation']; vals=[ZSYS,Z_TABLE]\n        a3.scatter(vals,[1,0],s=95,color=['#8fd3ff','#ff9f43'])\n        for yy,v,lab,col,off in zip([1,0],vals,labels,['#8fd3ff','#ff9f43'],[(18,-12),(18,14)]):\n            a3.annotate(f'{lab}: z={v:.9f}',xy=(v,yy),xytext=off,textcoords='offset points',va='center',fontsize=10,color=col,arrowprops=dict(arrowstyle='-',lw=.8,color=col))\n        a3.set_yticks([]); a3.set_ylim(-0.35,1.35); a3.set_xlim(min(vals)-.00015,max(vals)+.00015); a3.set_xlabel('Redshift z')")
+source=source.replace("        a3.set_title(f'Fixed-systemic fit parameters: T={tbest:.0f} K, nebular fraction={nfbest:.2f}, log N(H I)={lnbest:.2f}')","        a3.set_title(f'Official systemic-only comparison; fixed-spectrum parameters: T={tbest:.0f} K, nebular fraction={nfbest:.2f}, log N(H I)={lnbest:.2f}')")
+source=source.replace("        a4.legend(frameon=False,fontsize=8.5,ncol=2)","        a4.legend(frameon=False,fontsize=8.5,ncol=2,loc='upper right')")
+source=source.replace("        a4.text(.02,.95,txt,transform=a4.transAxes,va='top',fontsize=10,","        a4.text(.02,.06,txt,transform=a4.transAxes,va='bottom',ha='left',fontsize=10,")
+source=source.replace("txt=(f'Rounded centroid → z={Z_TABLE:.9f}\\nOfficial z={ZSYS:.7f} → ν={NU_EXACT:.9f} GHz\\n'","txt=(f'DERIVED FROM PUBLISHED ROUNDED CENTROID: z={Z_TABLE:.9f}\\nOFFICIAL FULL-PRECISION SYSTEMIC REDSHIFT: z={ZSYS:.7f} ± {ZSYS_SIG:.7f}\\nOfficial-z implied centroid: ν={NU_EXACT:.9f} GHz\\n'")
+source=source.replace("f'Δν={DNU_MHZ:.6f} MHz   Δz={DZ:.9f}   equivalent offset={DV_REL:.6f} km/s')","f'Δν={DNU_MHZ:.6f} MHz   Δz={DZ:.9f}\\nEquivalent centroid-rounding velocity offset={DV_REL:.6f} km/s\\nThis offset is from rounded centroid precision, not an imposed 11.38 model.')")
+source=source.replace("fig.suptitle('JADES-GS-z11-0 — full-spectrum systemic-redshift analysis with ALMA centroid correction\\nAll JWST panels retained; ALMA correction added as a fourth panel',fontsize=15,y=.996)","fig.suptitle(f'JADES-GS-z11-0 — official systemic-only full-spectrum analysis\\nRounded-centroid derivation z={Z_TABLE:.9f}; official full-precision z={ZSYS:.7f} ± {ZSYS_SIG:.7f}',fontsize=15,y=.996)")
+source=source.replace("print(f'CODE OUTPUT: {VERSION}')","print(f'CODE OUTPUT: {VERSION}')\n        print(f'DERIVED REDSHIFT FROM PUBLISHED ROUNDED CENTROID: {Z_TABLE:.9f}')\n        print(f'OFFICIAL FULL-PRECISION SYSTEMIC REDSHIFT: {ZSYS:.7f} ± {ZSYS_SIG:.7f}')\n        print(f'REDSHIFT DIFFERENCE: {DZ:.9f}')\n        print(f'EQUIVALENT CENTROID-ROUNDING VELOCITY OFFSET: {DV_REL:.6f} km/s')")
+source=source.replace("All JWST panels retained; ALMA correction added as a fourth panel","Official systemic-only analysis; no SMDS or 11.38 references")
+exec(compile(source,'JWST_0178_runtime.py','exec'),globals())

@@ -1,0 +1,9 @@
+VERSION=JWST_0111A
+SOURCE_ID=10003
+TARGET_RA_DEG=3.6171694
+TARGET_DEC_DEG=-30.4255494
+ADOPTED_REDSHIFT=9.31102
+
+G140H	hlsp_glass-jwst_jwst_nirspec_abell2744-1324-10003_f100lp-g140h_v1_spec.fits	offset_arcsec=0.029260	size_mb=2.804	ra=3.61716000	dec=-30.42555000	ra_source=PRIMARY:RA_TARG	dec_source=PRIMARY:DEC_TARG	sha256=5cc5042b1c35b491c079275887331b9cd5c0d04aa1fb22752164584037e04f68
+G235H	hlsp_glass-jwst_jwst_nirspec_abell2744-1324-10003_f170lp-g235h_v1_spec.fits	offset_arcsec=0.029260	size_mb=2.093	ra=3.61716000	dec=-30.42555000	ra_source=PRIMARY:RA_TARG	dec_source=PRIMARY:DEC_TARG	sha256=e5b8f300d2b4a991ea6044cfad51fd6e8da4147170d252a664f48e585f481ef6
+G395H	hlsp_glass-jwst_jwst_nirspec_abell2744-1324-10003_f290lp-g395h_v1_spec.fits	offset_arcsec=0.029260	size_mb=1.983	ra=3.61716000	dec=-30.42555000	ra_source=PRIMARY:RA_TARG	dec_source=PRIMARY:DEC_TARG	sha256=38f0e60676b11414917c5b375832dd5c39e37ef70fd6e776e44fd72f161fa69f

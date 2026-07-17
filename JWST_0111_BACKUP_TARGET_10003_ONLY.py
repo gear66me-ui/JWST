@@ -1,4 +1,4 @@
-# JWST_0111
+# JWST_0111A
 # Audit reference: back up only the three verified HLSP GLASS spectra for source 10003.
 
 from pathlib import Path
@@ -10,7 +10,7 @@ from astropy.io import fits
 from astropy.coordinates import SkyCoord
 import astropy.units as u
 
-VERSION = "JWST_0111"
+VERSION = "JWST_0111A"
 print(f"CODE OUTPUT: {VERSION}")
 
 TARGET_RA = 3.6171694
@@ -26,6 +26,19 @@ EXPECTED = {
     "G235H": "hlsp_glass-jwst_jwst_nirspec_abell2744-1324-10003_f170lp-g235h_v1_spec.fits",
     "G395H": "hlsp_glass-jwst_jwst_nirspec_abell2744-1324-10003_f290lp-g395h_v1_spec.fits",
 }
+
+RA_KEYS = ("TARG_RA", "RA_TARG", "RA")
+DEC_KEYS = ("TARG_DEC", "DEC_TARG", "DEC")
+
+
+def find_coordinate(hdul, keys):
+    for hdu in hdul:
+        for key in keys:
+            value = hdu.header.get(key)
+            if value is not None:
+                return float(value), hdu.name, key
+    return None, None, None
+
 
 if not SOURCE_ROOT.exists():
     raise FileNotFoundError(SOURCE_ROOT)
@@ -45,22 +58,25 @@ for mode, filename in EXPECTED.items():
 
     path = matches[0]
     with fits.open(path, memmap=False) as hdul:
-        hdr = hdul[0].header
-        ra = hdr.get("RA")
-        dec = hdr.get("DEC")
+        ra, ra_hdu, ra_key = find_coordinate(hdul, RA_KEYS)
+        dec, dec_hdu, dec_key = find_coordinate(hdul, DEC_KEYS)
         if ra is None or dec is None:
-            raise RuntimeError(f"Missing RA/DEC in {filename}")
+            raise RuntimeError(f"Missing target coordinates in {filename}")
 
         target = SkyCoord(TARGET_RA * u.deg, TARGET_DEC * u.deg)
-        measured = SkyCoord(float(ra) * u.deg, float(dec) * u.deg)
+        measured = SkyCoord(ra * u.deg, dec * u.deg)
         offset = measured.separation(target).arcsec
 
     if offset > MAX_OFFSET_ARCSEC:
         raise RuntimeError(f"Coordinate mismatch for {filename}: {offset:.6f} arcsec")
 
     size_mb = path.stat().st_size / 1024 / 1024
-    selected.append((mode, path, offset, size_mb))
-    print(f"{mode:5s}  offset={offset:.6f} arcsec  size={size_mb:.3f} MB")
+    selected.append((mode, path, offset, size_mb, ra, dec))
+    print(
+        f"{mode:5s}  RA={ra:.8f}  DEC={dec:.8f}  "
+        f"offset={offset:.6f} arcsec  size={size_mb:.3f} MB  "
+        f"headers={ra_hdu}:{ra_key},{dec_hdu}:{dec_key}"
+    )
 
 print()
 print("COPYING VERIFIED FILES")
@@ -74,15 +90,17 @@ manifest_lines = [
     f"TARGET_RA_DEG={TARGET_RA}",
     f"TARGET_DEC_DEG={TARGET_DEC}",
     "ADOPTED_REDSHIFT=9.31102",
+    "SELECTION=HLSP_GLASS_ABELL2744_1324_SOURCE_10003_ONLY",
     "",
 ]
 
-for mode, path, offset, size_mb in selected:
+for mode, path, offset, size_mb, ra, dec in selected:
     destination = DEST_DIR / path.name
     shutil.copy2(path, destination)
     digest = hashlib.sha256(destination.read_bytes()).hexdigest()
     manifest_lines.append(
-        f"{mode}\t{path.name}\toffset_arcsec={offset:.6f}\tsize_mb={size_mb:.3f}\tsha256={digest}"
+        f"{mode}\t{path.name}\tra_deg={ra:.8f}\tdec_deg={dec:.8f}"
+        f"\toffset_arcsec={offset:.6f}\tsize_mb={size_mb:.3f}\tsha256={digest}"
     )
 
 manifest = DEST_DIR / "MANIFEST.txt"

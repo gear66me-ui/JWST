@@ -1,31 +1,31 @@
 [
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0028_HAWKING_TEMPERATURE_ANCHORS.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0028_HAWKING_TEMPERATURE_ANCHOR_FIX/PNG/JWST_0028_HAWKING_TEMPERATURE_ANCHORS.png"
   },
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0028_ANCHOR_TEMPERATURE_LADDER.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0028_HAWKING_TEMPERATURE_ANCHOR_FIX/PNG/JWST_0028_ANCHOR_TEMPERATURE_LADDER.png"
   },
   {
     "type": "png",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0028_ANCHOR_TABLE.png",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0028_HAWKING_TEMPERATURE_ANCHOR_FIX/PNG/JWST_0028_ANCHOR_TABLE.png"
   },
   {
     "type": "csv",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0028_TEMPERATURE_VS_RADIUS_CURVE.csv",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0028_HAWKING_TEMPERATURE_ANCHOR_FIX/CSV/JWST_0028_TEMPERATURE_VS_RADIUS_CURVE.csv"
   },
   {
     "type": "csv",
-    "status": "created",
+    "status": "updated",
     "file": "JWST_0028_ANCHOR_VALUES.csv",
     "raw_url": "https://raw.githubusercontent.com/gear66me-ui/JWST/main/OUTPUTS/JWST_0028_HAWKING_TEMPERATURE_ANCHOR_FIX/CSV/JWST_0028_ANCHOR_VALUES.csv"
   }

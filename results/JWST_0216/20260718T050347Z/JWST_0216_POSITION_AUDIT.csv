@@ -1,0 +1,4 @@
+quantity,x_pixel,y_pixel,offset_arcsec
+JWST target,64.0,64.0,0.0
+Moment-0 peak,64.0,94.0,1.68000000000048
+Free-mask positive-flux centroid,64.98333878322964,58.52037180005277,0.3117610098255783

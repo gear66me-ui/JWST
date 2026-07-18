@@ -1,0 +1,2 @@
+model,target_frequency_GHz,nearest_channel_GHz,nearest_channel_offset_MHz,line_channels,target_line_flux,null_sigma,target_integrated_SNR,target_percentile_vs_null,false_alarm_fraction,centroid_GHz,centroid_offset_MHz,moment0_peak_offset_arcsec,control_positions,mask_pixels,beam_major_arcsec,beam_minor_arcsec
+Model E — manual aperture mask,279.901,279.9031793105,2.1793104999687785,8,0.007439296,0.0035106288,2.119078,97.5,0.025,279.8986031375967,-2.396862403315936,1.68000000000048,160,112,0.3988998395874,0.294546902541084

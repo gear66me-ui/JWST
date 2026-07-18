@@ -1,0 +1,2 @@
+model,target_frequency_GHz,nearest_channel_GHz,nearest_channel_offset_MHz,line_channels,target_line_flux,null_sigma,target_integrated_SNR,target_percentile_vs_null,false_alarm_fraction,centroid_GHz,centroid_offset_MHz,moment0_peak_offset_arcsec,control_positions,mask_pixels,beam_major_arcsec,beam_minor_arcsec
+Model E — fixed screenshot-derived moment-0 mask,279.901,279.9031793105,2.1793104999687785,8,-0.0064097173,0.006539904,-0.9800935,23.125,0.76875,279.89170798875483,-9.29201124517931,1.68000000000048,160,2305,0.3988998395874,0.294546902541084

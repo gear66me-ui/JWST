@@ -1,0 +1,2 @@
+model,jwst_file,jwst_hdu,line_channels,line_flux_sum,line_noise_sigma,integrated_SNR,centroid_GHz,offset_MHz,beam_major_arcsec,beam_minor_arcsec
+Model B — JWST morphology template,jw01180013001_08101_00004_nrcalong_i2d.fits,1,8,0.002289187181723231,0.003210249708409751,0.7130869526212703,279.8953820204774,-5.617979522583028,0.3988998395874,0.294546902541084
